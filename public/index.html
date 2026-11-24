@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>budget website | Simple budgeting tools</title>
+<meta name="description" content="Budget sheets and a budgeting app that make managing your money simple.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Budget sheets + budget app</span>
+      <h1>Take control of <span class="hl">your money.</span></h1>
+      <p class="lead">Simple budgeting tools that help you see where your money goes, plan ahead and build better habits. No bank logins, no confusing jargon.</p>
+      <div class="btn-row">
+        <a class="btn" href="/sheets">Explore budget sheets</a>
+        <a class="btn btn-ghost" href="/app">See the app</a>
+      </div>
+      <div class="trust"><span>Works in Google Sheets</span><span>Instant delivery</span><span>No bank connection needed</span></div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="mock-sheet">
+        <div class="mock-top"><span class="mock-title">November Budget</span><span class="mock-dots"><i></i><i></i><i></i></span></div>
+        <div class="mock-cards">
+          <div class="mock-card">Income<strong>$4,250</strong></div>
+          <div class="mock-card">Spent<strong>$2,890</strong></div>
+          <div class="mock-card">Left<strong>$1,360</strong></div>
+        </div>
+        <div class="mock-rows">
+          <div class="mock-row"><div><span>Groceries</span><div class="bar"><i style="width:72%"></i></div></div><span>$432 / $600</span></div>
+          <div class="mock-row"><div><span>Rent</span><div class="bar"><i style="width:100%"></i></div></div><span>$1,400</span></div>
+          <div class="mock-row"><div><span>Gas</span><div class="bar"><i style="width:45%"></i></div></div><span>$90 / $200</span></div>
+          <div class="mock-row"><div><span>Savings</span><div class="bar"><i style="width:80%;background:#d4a52a"></i></div></div><span>$400 / $500</span></div>
+          <div class="mock-row"><div><span>Fun money</span><div class="bar"><i style="width:30%;background:#d26b8f"></i></div></div><span>$45 / $150</span></div>
+        </div>
+      </div>
+      <div class="mock-phone">
+        <div class="phone-screen">
+          <small>Left to spend</small>
+          <div class="phone-left">$1,360</div>
+          <div class="ring"></div>
+          <div class="phone-item"><span>Coffee</span><span>-$5.40</span></div>
+          <div class="phone-item"><span>Paycheck</span><span>+$2,125</span></div>
+          <div class="phone-item"><span>Groceries</span><span>-$86.12</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="grid grid-2">
+      <a class="card path-card" href="/sheets">
+        <div class="icon" style="background:var(--mint)">📊</div>
+        <h3>Budget sheets</h3>
+        <p class="muted">Ready-to-use Google Sheets templates. Pick your level, make a copy and start budgeting in minutes.</p>
+        <span class="arrow">Shop sheets →</span>
+      </a>
+      <a class="card path-card" href="/app">
+        <div class="icon" style="background:var(--sky)">📱</div>
+        <h3>Budget app</h3>
+        <p class="muted">Track spending on the go. Free to use, with a Pro upgrade for net worth, goals and more.</p>
+        <span class="arrow">See the app →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Budget sheets</span>
+      <h2>Pick the level that fits you</h2>
+      <p class="muted">Start simple or get the full toolkit. Every sheet works in a free Google account.</p>
+    </div>
+    <div class="grid grid-4" data-product-cards></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">How it works</span>
+      <h2>Budgeting in three easy steps</h2>
+    </div>
+    <div class="grid grid-3 steps">
+      <div class="step"><h3>Choose your sheet</h3><p class="muted">Pick a level and check out. Your sheet arrives by email right away.</p></div>
+      <div class="step"><h3>Make your copy</h3><p class="muted">Click the link, press "Make a copy" and it's saved in your own Google Drive.</p></div>
+      <div class="step"><h3>Fill it in</h3><p class="muted">Add your income, budget and spending. The sheet does the math and draws the charts.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Who it's for</span>
+      <h2>Made for real-life budgets</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><div class="icon" style="background:var(--mint)">🌱</div><h3>First-time budgeters</h3><p class="muted">Not sure where your paycheck goes? Start with a sheet that shows you in one glance.</p></div>
+      <div class="card"><div class="icon" style="background:var(--sun)">🎯</div><h3>Goal setters</h3><p class="muted">Saving for something or paying off debt? Track every step toward it.</p></div>
+      <div class="card"><div class="icon" style="background:var(--berry)">🏡</div><h3>Busy households</h3><p class="muted">Keep bills, groceries and savings organized without a complicated app.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="band band-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--lime)">Free download</span>
+        <h2>Get a free monthly budget sheet</h2>
+        <p class="muted">Join the email list and we'll send you a simple starter budget, plus easy money tips. No spam, unsubscribe anytime.</p>
+      </div>
+      <form class="signup" data-signup>
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="you@email.com" required>
+        <button class="btn btn-lime" type="submit">Send it to me</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Questions</span><h2>Good to know</h2></div>
+    <div class="faq">
+      <details><summary>Do I need to pay for Google Sheets?</summary><p>No. Google Sheets is free with any Google account.</p></details>
+      <details><summary>How do I get my sheet after I buy it?</summary><p>You'll get an email right away with a link. Click it, press "Make a copy," and the sheet is yours.</p></details>
+      <details><summary>Can I use it on my phone?</summary><p>Yes, in the free Google Sheets app. It's easiest to set up on a computer first.</p></details>
+      <details><summary>Do I have to connect my bank?</summary><p>No. You type in your own numbers, so your bank login stays private.</p></details>
+    </div>
+    <p style="margin-top:24px"><a href="/support">See all questions →</a></p>
+  </div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="/assets/products.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>

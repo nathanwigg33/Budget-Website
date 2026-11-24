@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budget App | budget website</title>
+<meta name="description" content="A simple budgeting app. Free to use, with a Pro upgrade.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<section class="hero app-hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">The budget app · coming soon</span>
+      <h1>Your budget, <span class="hl">in your pocket.</span></h1>
+      <p class="lead">Log spending in seconds, see what's left at a glance and keep your budget synced across your devices. Free to start, with a Pro upgrade when you want more.</p>
+      <div class="store-badges">
+        <span class="store-badge"><small>Coming soon to the</small><strong>App Store</strong></span>
+        <span class="store-badge"><small>Coming soon to</small><strong>Google Play</strong></span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true" style="min-height:400px">
+      <div class="mock-phone" style="right:auto;left:50%;margin-left:-95px;transform:rotate(-3deg)">
+        <div class="phone-screen">
+          <small>Left to spend</small>
+          <div class="phone-left">$1,360</div>
+          <div class="ring"></div>
+          <div class="phone-item"><span>Coffee</span><span>-$5.40</span></div>
+          <div class="phone-item"><span>Paycheck</span><span>+$2,125</span></div>
+          <div class="phone-item"><span>Groceries</span><span>-$86.12</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="grid grid-3">
+      <div class="card"><div class="icon" style="background:var(--mint)">⚡</div><h3>Log it in seconds</h3><p class="muted">Add a purchase in a couple of taps, right when it happens.</p></div>
+      <div class="card"><div class="icon" style="background:var(--sky)">🔒</div><h3>No bank login</h3><p class="muted">You enter your own numbers, so your bank details stay with you.</p></div>
+      <div class="card"><div class="icon" style="background:var(--sun)">☁️</div><h3>Synced everywhere</h3><p class="muted">Sign in on any device and your budget is right there.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head center"><span class="eyebrow">Plans</span><h2>Free to start. Pro when you're ready.</h2></div>
+    <div class="grid grid-2" style="max-width:860px;margin-inline:auto">
+      <div class="card plan">
+        <h3>Free</h3>
+        <div class="price-row"><span class="price">$0</span></div>
+        <p class="muted">Everything you need to budget every month.</p>
+        <ul class="checks">
+          <li>Monthly budget</li><li>Expense and income tracking</li><li>Budget categories</li><li>Dashboard and monthly summary</li>
+        </ul>
+        <button class="btn btn-ghost" disabled>Coming soon</button>
+      </div>
+      <div class="card plan pro">
+        <h3>Pro</h3>
+        <div class="price-row"><span class="price">$29.99 <small>/ year</small></span></div>
+        <p class="muted">Or $4.99 a month. For people with bigger goals.</p>
+        <ul class="checks">
+          <li>Everything in Free</li><li>Net worth tracker and chart</li><li>Savings goals and debt payoff</li><li>Advanced reports and data export</li>
+        </ul>
+        <button class="btn btn-lime" disabled>Coming soon</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Compare</span><h2>Free vs. Pro</h2></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Feature</th><th>Free</th><th class="col-pro">Pro</th></tr></thead>
+        <tbody>
+          <tr><td>Monthly budget</td><td class="yes">✓</td><td class="yes col-pro">✓</td></tr>
+          <tr><td>Expense and income tracking</td><td class="yes">✓</td><td class="yes col-pro">✓</td></tr>
+          <tr><td>Dashboard</td><td class="yes">✓</td><td class="yes col-pro">✓</td></tr>
+          <tr><td>Sync across devices</td><td class="yes">✓</td><td class="yes col-pro">✓</td></tr>
+          <tr><td>Custom categories</td><td>Limited</td><td class="yes col-pro">Unlimited</td></tr>
+          <tr><td>Net worth tracker</td><td class="no">–</td><td class="yes col-pro">✓</td></tr>
+          <tr><td>Savings goals and debt payoff</td><td class="no">–</td><td class="yes col-pro">✓</td></tr>
+          <tr><td>Advanced reports</td><td class="no">–</td><td class="yes col-pro">✓</td></tr>
+          <tr><td>Data export</td><td class="no">–</td><td class="yes col-pro">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="band band-grid">
+      <div>
+        <h2>Like spreadsheets?</h2>
+        <p class="muted">Our budget sheets pair perfectly with the app. Plan your month on the big screen, track it on the go.</p>
+      </div>
+      <div><a class="btn btn-lime" href="/sheets">Explore budget sheets</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="/assets/products.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>

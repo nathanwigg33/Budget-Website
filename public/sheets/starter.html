@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>budget website</title>
+<meta name="description" content="Google Sheets budget template.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main class="section" data-product="starter">
+  <div class="container">
+    <div class="crumbs"><a href="/sheets">Budget sheets</a> / <span data-field="name"></span></div>
+    <div class="product-hero">
+      <div>
+        <div class="product-visual" data-theme-target aria-hidden="true">
+          <div class="pv-cards"><i></i><i></i><i></i></div>
+          <div class="pv-body"><i></i><i></i></div>
+        </div>
+        <p class="placeholder-note">Screenshots and a demo video coming soon.</p>
+
+        <div style="margin-top:44px">
+          <h2>What's included</h2>
+          <ul class="checks" data-field="features"></ul>
+        </div>
+
+        <div style="margin-top:36px">
+          <h2>How you get it</h2>
+          <div class="grid steps" style="gap:28px">
+            <div class="step"><h3>Check out</h3><p class="muted">Pay securely. Your sheet arrives by email right away.</p></div>
+            <div class="step"><h3>Make your copy</h3><p class="muted">Open the link and press "Make a copy." It saves to your own Google Drive.</p></div>
+            <div class="step"><h3>Follow the guide</h3><p class="muted">A short setup guide walks you through adding income, categories and spending.</p></div>
+          </div>
+        </div>
+
+        <div style="margin-top:36px">
+          <h2>Questions</h2>
+          <div class="faq">
+            <details><summary>Do I need to pay for Google Sheets?</summary><p>No. Google Sheets is free with any Google account.</p></details>
+            <details><summary>Can I change the categories?</summary><p>Yes. Rename, add or remove categories to fit your life.</p></details>
+            <details><summary>Does it work on my phone?</summary><p>Yes, in the free Google Sheets app. Setup is easiest on a computer.</p></details>
+            <details><summary>Will I get updates?</summary><p>Yes. If we improve your sheet, we'll email you a link to the new version.</p></details>
+            
+          </div>
+        </div>
+      </div>
+
+      <aside class="buy-box">
+        <span class="eyebrow" data-field="tier"></span>
+        <h1 style="font-size:2.2rem" data-field="name"></h1>
+        <p class="muted" data-field="description"></p>
+        <div class="price-row" data-field="price"></div>
+        <div data-field="buy"></div>
+        <div class="buy-meta">
+          <span>Instant delivery by email</span>
+          <span>Works with free Google Sheets</span>
+          <span>Best for: <b data-field="bestFor"></b></span>
+          <span>Personal use license</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+<footer id="site-footer"></footer>
+<script src="/assets/products.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>
