@@ -32,7 +32,7 @@ window.PRODUCTS = {
     popular: true,
     image: "/assets/sheets/complete/card.webp",
     gallery: [
-      { src: "/assets/sheets/complete/dashboard.webp", alt: "Budget dashboard with income, expenses, remaining and savings rate cards, budget health bars, spending by type, a spending donut chart, top 5 categories, a month-by-month chart and insights" },
+      { src: "/assets/sheets/complete/dashboard.webp", alt: "Budget dashboard with a period picker, income and expense cards with budget vs. actual bars, net income, an expenses donut chart, a ring chart for each spending type, a month-by-month chart and insights" },
       { src: "/assets/sheets/complete/budget.webp", alt: "Budget planner tab with color-coded category types, monthly budgets, actual spending, differences and progress bars" },
       { src: "/assets/sheets/complete/transactions.webp", alt: "Transactions tab with date, description, category, automatic type, payment method and amount columns" },
     ],
@@ -41,7 +41,7 @@ window.PRODUCTS = {
       "Income tracking with savings rate and cash flow",
       "Category types: Fixed, Variable, Savings, Giving, Debt, Investment",
       "View by month, quarter, year or a custom date range",
-      "Colorful dashboard with cards, charts and a Top 5 list",
+      "Colorful dashboard with budget vs. actual cards and a ring chart for each spending type",
       "Automatic insights, like how much you can spend per day",
       "Budget vs. actual with progress bars for every category",
       "Settings for payment methods and your savings goal",
