@@ -75,7 +75,9 @@
       return (
         '<article class="product-card theme-' + p.color + (p.popular ? " is-popular" : "") + '">' +
         (p.popular ? '<span class="ribbon">Most popular</span>' : "") +
-        '<div class="sheet-thumb" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div>' +
+        (p.image
+          ? '<div class="sheet-thumb has-image"><img src="' + p.image + '" alt="Preview of the ' + p.name + ' sheet" loading="lazy"></div>'
+          : '<div class="sheet-thumb" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div>') +
         '<span class="eyebrow">' + p.tier + "</span>" +
         "<h3>" + p.name + "</h3>" +
         '<p class="muted">' + p.tagline + "</p>" +
@@ -100,6 +102,30 @@
       else if (p[f] != null) el.textContent = p[f];
     });
     page.querySelectorAll("[data-theme-target]").forEach(function (el) { el.classList.add("theme-" + p.color); });
+
+    // Screenshot gallery: one big image plus clickable thumbnails.
+    page.querySelectorAll("[data-gallery]").forEach(function (el) {
+      var shots = p.gallery || [];
+      if (!shots.length) return;
+      el.classList.add("theme-" + p.color);
+      el.innerHTML =
+        '<a class="gallery-main" href="' + shots[0].src + '" target="_blank" rel="noopener"><img src="' + shots[0].src + '" alt="' + shots[0].alt + '"></a>' +
+        (shots.length > 1
+          ? '<div class="gallery-thumbs">' + shots.map(function (s, i) {
+              return '<button type="button"' + (i === 0 ? ' aria-current="true"' : "") + ' data-i="' + i + '"><img src="' + s.src + '" alt="" loading="lazy"><span class="sr-only">Show screenshot ' + (i + 1) + "</span></button>";
+            }).join("") + "</div>"
+          : "");
+      var main = el.querySelector(".gallery-main");
+      var img = main.querySelector("img");
+      el.querySelectorAll(".gallery-thumbs button").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var s = shots[+b.dataset.i];
+          img.src = s.src; img.alt = s.alt; main.href = s.src;
+          el.querySelectorAll(".gallery-thumbs button").forEach(function (x) { x.removeAttribute("aria-current"); });
+          b.setAttribute("aria-current", "true");
+        });
+      });
+    });
   }
 
   // Email signup: no email service connected yet.
